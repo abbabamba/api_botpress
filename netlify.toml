@@ -1,7 +1,12 @@
 [build]
+  command = "npm run build"
+  publish = "."
   functions = "functions"
 
+[build.environment]
+  NODE_VERSION = "14"
+
 [[redirects]]
-  from = "/appointments"
-  to = "/.netlify/functions/appointments"
+  from = "/*"
+  to = "/.netlify/functions/api"
   status = 200
