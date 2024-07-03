@@ -1,0 +1,7 @@
+[build]
+  functions = "functions"
+
+[[redirects]]
+  from = "/appointments"
+  to = "/.netlify/functions/appointments"
+  status = 200
